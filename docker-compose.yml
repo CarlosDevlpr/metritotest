@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  metrito:
+    container_name: metritoapp
+    build: .
+    command: yarn dev
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/usr/app
+    environment:
+      - NODE_ENV=development

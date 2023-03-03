@@ -1,0 +1,31 @@
+{
+  "name": "express-mongo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node -r module-alias/register src/index.js",
+    "dev": "nodemon -r module-alias/register src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "module-alias": "^2.2.2",
+    "mongoose": "^7.0.0",
+    "ramda": "^0.28.0",
+    "yup": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
+  "_moduleAliases": {
+    "@src": "src/*",
+    "@controllers": "src/controllers/*",
+    "@loaders": "src/loaders/*",
+    "@models": "src/models/*",
+    "@schemas": "src/schemas/*",
+    "@utils": "src/utils/*"
+  }
+}

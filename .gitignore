@@ -1,0 +1,6 @@
+/data/*
+/node_modules/*
+/node_modules/**/*.cmd
+.env
+.cmd
+.log
